@@ -1,3 +1,4 @@
+
 const express = require('express'); //requiero express
 const path = require('path'); //requiero path
 
@@ -18,3 +19,4 @@ const homePath = path.join(__dirname, "./views/home.html")
 app.get("/",(req, res)=>{
 res.sendFile(homePath)
 })
+
