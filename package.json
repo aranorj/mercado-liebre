@@ -1,14 +1,22 @@
 {
-  "name": "proyecthtml1",
+  "name": "mercado_liebre",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start" : "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "author": "aranorj",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aranorj/mercadoLiebre.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aranorj/mercadoLiebre/issues"
+  },
+  "homepage": "https://github.com/aranorj/mercadoLiebre#readme"
 }
