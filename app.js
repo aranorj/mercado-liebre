@@ -13,8 +13,8 @@ app.listen("3000", ()=>{
     console.log('Escuchando por el puerto 3000')
 });
 
-//deifno el home vinculandolo con un html 
-const homePath = path.join(__dirname, "./views/index.html")
+//defino el home vinculandolo con un html 
+const homePath = path.join(__dirname, "./views/home.html")
 app.get("/",(req, res)=>{
 res.sendFile(homePath)
 })
