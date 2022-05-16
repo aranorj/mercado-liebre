@@ -12,13 +12,18 @@ Verde: #39b54a;*/
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
-    padding:5px;
+    padding: 0px;
+    margin: 0px;
 }
 header{
     font-family: 'Roboto', sans-serif;
     background-color: #EAC926;
-    width: 100vw;
+    display: block;
+    min-width: 360px;
     padding-bottom: 10px;
+}
+img {
+    max-width: 100%;
 }
 #busqueda{
     display: flex;
@@ -39,10 +44,11 @@ header{
     margin-left: 10vw;
 }
 .burger-menu{
-    display: inline-block;
+    display: block;
     padding:6px;
     background-color: #1259c3;
     color: white; 
+    width: fit-content;
     border-radius: 5px;
     margin-bottom:5px;
     margin: 0 auto;
