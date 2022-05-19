@@ -9,9 +9,10 @@ let app = express();
 const publicPath = path.join(__dirname,'./public');
 app.use(express.static(publicPath));
 
+const port = process.env.PORT || 3000
 //defino el puerto
-app.listen("3000", ()=>{
-    console.log('Escuchando por el puerto 3000')
+app.listen(port, ()=>{
+    console.log(`Escuchando por el puerto ${port}`)
 });
 
 //deifno el home vinculandolo con un html 
