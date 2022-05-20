@@ -6,7 +6,7 @@ const path = require('path'); //requiero path
 let app = express(); 
 
 //defino que obtendré mis recursos estáticos desde la carpeta public
-const publicPath = path.join(__dirname,'./public');
+const publicPath = path.join(__dirname,'../public');
 app.use(express.static(publicPath));
 
 const port = process.env.PORT || 3000
@@ -15,10 +15,10 @@ app.listen(port, ()=>{
     console.log(`Escuchando por el puerto ${port}`)
 });
 
-
-//defino el home vinculandolo con un html 
-const homePath = path.join(__dirname, "./views/home.html")
+//deifno el home vinculandolo con un html 
+const homePath = path.join(__dirname, "views/home.html")
 app.get("/",(req, res)=>{
 res.sendFile(homePath)
 })
+
 
