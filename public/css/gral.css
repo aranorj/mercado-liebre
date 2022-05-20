@@ -5,6 +5,7 @@ Celeste: #1259c3;
 Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a;*/
+
 *{
     box-sizing: border-box;
     }
@@ -75,6 +76,7 @@ section input{
     width: 100%;
     flex-grow: 1;
     margin: auto;
+    font-size: 14px;
 }
 .burger-menu{
     display: block;
@@ -86,100 +88,9 @@ section input{
     margin-bottom:5px;
     margin: 0 auto;
     font-size: 25px;
-    
 } 
 
-h3{
-    font-size:24px;
-    color: #666;
-}
 
-main{
-    margin-left: auto; 
-    margin-right: auto;
-    width: 90vw;
-}
-
-main section{
-    display: flex;
-    flex-wrap: wrap;
-    width: 90vw;
-}
-
-main section article{
-    display: flex;
-    text-align: center;
-    width: 90vw;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    flex-direction: column;
-    
-}
-
-main section article div{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;   
-    text-align: left;
-    border-top: 1px solid #ebebeb;
-    background-color: white;
-    padding: 15px;
-    flex-grow: 1;
-    width: 100%;
-    justify-content: center;
-}
-
-.prodImg{
-    display: flex;
-    width: 100%;
-    background-color: white;
-}
-
-.precio{
-    flex-grow: 0.30;
-    font-size: 18px;
-    color: black;
-    
-}
-.descuento{
-    flex-grow: 0.70;
-    font-size: 16px;
-    color: #39b54a;
-    
-}
-.descrip{
-    font-size: 16px;
-    width: 100%;
-}
-
-main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-}
-
-p{
-    font-size:12px;
-    color: #666; 
-}
-
-.footerIcon{
-    color: #1259c3;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-h4{
-    color:#666;
-}
 footer{
     text-align: center;
     display: flex;
@@ -193,11 +104,19 @@ footer section {
      margin-top: 20px;
  }
 
-@media (min-width: 361px){
+ .footerIcon{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+ @media (min-width: 361px){
     #navs{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-left: 10px;
     }
     #navs nav ul{
         display: flex;
@@ -209,6 +128,7 @@ footer section {
         padding: 0;
     }
     #navs nav ul li{
+        margin-top: 30px;
         padding: 0.5rem;
     }
 
@@ -220,16 +140,26 @@ footer section {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+     }
 
-    }
     #imgCabecera{
         width: 30%;
     }
+
     #busqueda{
-        width:50px;
+        width: 20%;
         display: flex;
         height: 25px;
         align-self: center;
+        justify-self: right;
+        margin-left: 10px;
+        
+    }
+
+    #busqueda input{ 
+        border-radius: 3px;
+        box-shadow: 0px 0px 5px rgb(100, 100, 100);
+        justify-self: center;
     }
     #enCuotas{
         text-align: left;
@@ -240,29 +170,22 @@ footer section {
         justify-self: right;
         padding:0;
     }
-    main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        display: flex;
-        flex-wrap: wrap;
-        width: 47%;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-grow: 1;
-    }
 
     #look{
         display: flex;
         justify-self: flex-end;
         position:static;
         background-color:#ebebeb;
+        padding: 1.5px;
+        border: #666 1px solid;
+        border-radius: 3px;
         color: black;
         right: 6.5%;
         align-self:center;
         justify-self: flex-end;
-        margin: 2px;
+        margin: 4px;
     }
-    }
-
+}
 
 @media (min-width: 769px){
     #navs{
@@ -270,13 +193,4 @@ footer section {
     }
     .burger-menu{
     display: none; 
-    }
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 23%;
-        flex-grow: 1;
-    }
-}
+    }}
