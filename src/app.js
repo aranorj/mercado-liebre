@@ -39,6 +39,7 @@ res.sendFile(loginPath);
 app.post("/datos-registro",(req, res)=>{
 res.send(req.body);
 })
+
 app.post("/datos-login",(req, res)=>{
     res.send(req.body);
 })

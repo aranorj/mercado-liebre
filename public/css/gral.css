@@ -197,7 +197,7 @@ footer section {
     }
 }
 
-/*@media (min-width: 769px) {
+@media (min-width: 1024px) {
     #navs {
         display: flex;
         font-size: large;
@@ -209,4 +209,35 @@ footer section {
     .burger-menu {
         display: none;
     }
-}*/
+    
+footer {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer section{
+    width: 30%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+.footerIcon {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.footerIcon :hover{
+    color: #03264C;
+}
+section#copy{
+    width: 100px;
+    text-align: left; 
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+}
