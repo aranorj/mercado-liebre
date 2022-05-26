@@ -6,18 +6,25 @@ Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a;*/
 
-*{
+* {
     box-sizing: border-box;
-    }
+}
 
-body{
+button {
+    border: none;
+    border-style: none;
+    background-color: transparent;
+    border-color: none;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
     padding: 0px;
     margin: 0px;
 }
 
-header{
+header {
     font-family: 'Roboto', sans-serif;
     background-color: #EAC926;
     display: block;
@@ -27,48 +34,51 @@ header{
 
 
 
-header #encabezado{
+header #encabezado {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
-    
+
 }
 
 img {
     max-width: 100vw;
 }
 
-#navs{
-    display:none;
+#navs {
+    display: none;
 }
 
-#busqueda{
+#busqueda {
     display: flex;
     position: inherit;
     width: 50%;
     flex-grow: 1;
     padding: 3px;
 }
-section input{
+
+form input {
     display: flex;
     width: 100%;
     border: 0px white solid;
     border-radius: 5px;
 }
 
-#look{
+#look {
     display: flex;
-    color:#ebebeb;
-    background-color:white;
+    color: #ebebeb;
+    background-color: white;
     position: absolute;
     right: 6.5%;
-    align-self:center;
+    align-self: center;
     justify-self: flex-end;
 }
-#imgCabecera{
+
+#imgCabecera {
     width: 50%;
 }
-#enCuotas{
+
+#enCuotas {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -78,20 +88,21 @@ section input{
     margin: auto;
     font-size: 14px;
 }
-.burger-menu{
+
+.burger-menu {
     display: block;
-    padding:6px;
+    padding: 6px;
     background-color: #1259c3;
-    color: white; 
+    color: white;
     width: fit-content;
     border-radius: 5px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
     margin: 0 auto;
     font-size: 25px;
-} 
+}
 
 
-footer{
+footer {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -99,26 +110,27 @@ footer{
 }
 
 footer section {
-     width: 60vw;
-     margin-bottom: 20px;
-     margin-top: 20px;
- }
+    width: 60vw;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 
- .footerIcon{
+.footerIcon {
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
 }
 
 
- @media (min-width: 361px){
-    #navs{
+@media (min-width: 361px) {
+    #navs {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin-left: 10px;
     }
-    #navs nav ul{
+
+    #navs nav ul {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
@@ -127,70 +139,74 @@ footer section {
         margin: auto;
         padding: 0;
     }
-    #navs nav ul li{
+
+    #navs nav ul li {
         margin-top: 30px;
         padding: 0.5rem;
     }
 
-    .burger-menu{
-    display: none; 
+    .burger-menu {
+        display: none;
     }
-    
-    div #encabezado{
+
+    div #encabezado {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
-     }
+    }
 
-    #imgCabecera{
+    #imgCabecera {
         width: 30%;
     }
 
-    #busqueda{
+    #busqueda {
         width: 20%;
         display: flex;
         height: 25px;
         align-self: center;
         justify-self: right;
         margin-left: 10px;
-        
+
     }
 
-    #busqueda input{ 
+    #busqueda input {
         border-radius: 3px;
         box-shadow: 0px 0px 5px rgb(100, 100, 100);
         justify-self: center;
     }
-    #enCuotas{
+
+    #enCuotas {
         text-align: left;
         justify-items: left;
         display: flex;
         width: 30%;
         margin: auto;
         justify-self: right;
-        padding:0;
+        padding: 0;
     }
 
-    #look{
+    #look {
         display: flex;
         justify-self: flex-end;
-        position:static;
-        background-color:#ebebeb;
+        position: static;
+        background-color: #ebebeb;
         padding: 1.5px;
         border: #666 1px solid;
         border-radius: 3px;
         color: black;
         right: 6.5%;
-        align-self:center;
+        align-self: center;
         justify-self: flex-end;
         margin: 4px;
     }
 }
 
-@media (min-width: 769px){
-    #navs{
+@media (min-width: 769px) {
+    #navs {
         display: flex;
     }
-    .burger-menu{
-    display: none; 
-    }}
+
+    .burger-menu {
+        display: none;
+    }
+}
