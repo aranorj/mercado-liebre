@@ -105,7 +105,7 @@ h4{
 @media (min-width: 361px){
     
     main section article {
-        
+        padding: 5px;
         display: flex;
         flex-wrap: wrap;
         width: 47%;

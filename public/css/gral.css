@@ -73,7 +73,7 @@ i {
 
 form input {
     display: flex;
-    height: 40px;
+    width: 100%;
     border: 0px white solid;
     border-radius: 5px;
     flex-grow: 1;
@@ -81,14 +81,18 @@ form input {
 
 #look {
     display: flex;
-    color: #ebebeb;
     background-color: white;
     position: absolute;
-    right: 6.5%;
+    right: 3.5%;
     align-self: center;
     justify-self: flex-end;
-    width: 15px;
+}
 
+#look i {
+    padding: 0;
+    margin: 0 auto;
+    font-size: 1.5em;
+    color: #ebebeb;
 }
 
 #imgCabecera {
@@ -100,19 +104,26 @@ form input {
 #enCuotas {
     text-align: center;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     padding-top: 1rem;
-    width: 100%;
     flex-grow: 1;
-    margin: auto;
+    margin: 10px auto;
+    padding: 0px 10px;
     font-size: 12px;
+}
+
+#enCuotas i {
+    display: flex;
+    margin: 0;
 }
 
 #enCuotas span {
     display: flex;
-    flex-grow: 1;
+    justify-self: center;
 }
+
 
 .burger-menu {
     display: block;
@@ -123,7 +134,7 @@ form input {
     border-radius: 5px;
     margin: 0 auto;
     margin-bottom: 5px;
-    font-size: 15px;
+
 }
 
 .burger-menu i {
@@ -161,7 +172,7 @@ section#copy {
 }
 
 
-@media (min-width: 361px) {
+@media (min-width: 767px) {
 
     #encabezado>* {
         flex-grow: 1;
@@ -176,7 +187,7 @@ section#copy {
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 auto;
-        margin-top: 25px;
+        margin-top: 40px;
     }
 
     #navs ul {
@@ -193,19 +204,19 @@ section#copy {
 
     ul.nav_izq {
         justify-content: left;
-
         padding-bottom: 5px;
         flex-grow: 1;
     }
 
     ul.nav_der {
         justify-content: right;
-        width: 47%;
+        width: 45%;
     }
 
     #navs ul li {
         display: flex;
-        padding: 0 5px;
+        padding: 0 10px;
+        margin: 0;
     }
 
     .burger-menu {
@@ -226,9 +237,9 @@ section#copy {
         align-self: center;
         margin: 0px 10px;
         align-items: center;
-        flex-grow: 1;
+        flex-grow: 2;
         padding: 2px;
-        
+
     }
 
     #busqueda input {
@@ -238,27 +249,37 @@ section#copy {
         font-size: 14px;
     }
 
-    #enCuotas {
-        text-align: center;
-        justify-items: center;
-        display: flex;
-        width: 15%;
-        margin: auto;
+    section#enCuotas {
+        justify-content: left;
         padding: 0;
+        width: 20vw;
+    }
+
+    #enCuotas span {
+        padding: 0;
+        text-align: left;
     }
 
     #look {
         display: flex;
-        color: #ebebeb;
         background-color: white;
         position: absolute;
-        right: 6.5%;
         align-self: center;
         justify-self: flex-end;
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1023px) {
+
+    section#enCuotas{
+        justify-content: center;
+    }
+
+    #enCuotas span{
+        font-size: 14px;
+    }
+
+
     #navs {
         display: flex;
         font-size: large;
@@ -266,11 +287,9 @@ section#copy {
         justify-content: space-between;
     }
 
-    #enCuotas {
-        font-size: large;
+    ul.nav_izq {
+        justify-content: space-around;
     }
-
-
 
     footer {
         text-align: center;
