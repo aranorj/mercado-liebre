@@ -26,6 +26,7 @@ body {
 
 header {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     background-color: #EAC926;
     display: block;
     min-width: 360px;
@@ -37,19 +38,26 @@ header {
 header #encabezado {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
-
+    margin: 0 auto;
+    padding: 0px 5px;
+    justify-content: space-between;
 }
 
-h4{
-    color:#666;
+h4 {
+    color: #666;
 }
-p{
-    font-size:12px;
-    color: #666; 
+
+p {
+    font-size: 12px;
+    color: #666;
 }
+
 img {
     max-width: 100vw;
+}
+
+i {
+    margin-bottom: 10px;
 }
 
 #navs {
@@ -58,17 +66,17 @@ img {
 
 #busqueda {
     display: flex;
-    position: inherit;
-    width: 50%;
-    flex-grow: 1;
-    padding: 3px;
+    position: relative;
+    width: 49%;
+    padding: 2px;
 }
 
 form input {
     display: flex;
-    width: 100%;
+    height: 40px;
     border: 0px white solid;
     border-radius: 5px;
+    flex-grow: 1;
 }
 
 #look {
@@ -79,21 +87,31 @@ form input {
     right: 6.5%;
     align-self: center;
     justify-self: flex-end;
+    width: 15px;
+
 }
 
 #imgCabecera {
-    width: 50%;
+    display: flex;
+    width: 49%;
+    padding: auto;
 }
 
 #enCuotas {
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 1rem;
     width: 100%;
     flex-grow: 1;
     margin: auto;
-    font-size: 14px;
+    font-size: 12px;
+}
+
+#enCuotas span {
+    display: flex;
+    flex-grow: 1;
 }
 
 .burger-menu {
@@ -103,9 +121,16 @@ form input {
     color: white;
     width: fit-content;
     border-radius: 5px;
-    margin-bottom: 5px;
     margin: 0 auto;
-    font-size: 25px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.burger-menu i {
+    font-size: 2em;
+    padding: auto;
+    margin: 0;
+    font-weight: light;
 }
 
 
@@ -114,6 +139,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
 }
 
 footer section {
@@ -128,28 +154,58 @@ footer section {
     margin-bottom: 10px;
 }
 
+section#copy {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+}
 
-@media (min-width: 768px) {
+
+@media (min-width: 361px) {
+
+    #encabezado>* {
+        flex-grow: 1;
+    }
+
+    #imgCabecera {
+        width: 25%;
+    }
+
     #navs {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-left: 10px;
+        margin: 0 auto;
+        margin-top: 25px;
     }
 
-    #navs nav ul {
+    #navs ul {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         list-style: none;
-        justify-content: space-between;
         text-align: center;
-        margin: auto;
-        padding: 0;
+        align-items: center;
+        flex-grow: 1;
+        margin: 0;
+        padding: auto;
+        padding-inline-start: 0;
     }
 
-    #navs nav ul li {
-        margin-top: 30px;
-        padding: 0.5rem;
+    ul.nav_izq {
+        justify-content: left;
+
+        padding-bottom: 5px;
+        flex-grow: 1;
+    }
+
+    ul.nav_der {
+        justify-content: right;
+        width: 47%;
+    }
+
+    #navs ul li {
+        display: flex;
+        padding: 0 5px;
     }
 
     .burger-menu {
@@ -160,10 +216,7 @@ footer section {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
-    }
 
-    #imgCabecera {
-        width: 30%;
     }
 
     #busqueda {
@@ -171,23 +224,23 @@ footer section {
         display: flex;
         height: 25px;
         align-self: center;
-        justify-self: right;
-        margin-left: 10px;
+        margin: 0px 10px;
         align-items: center;
         flex-grow: 1;
-
+        padding: 2px;
+        
     }
 
     #busqueda input {
-        border-radius: 3px;
         box-shadow: 0px 0px 5px rgb(100, 100, 100);
         justify-self: center;
         height: 35px;
+        font-size: 14px;
     }
 
     #enCuotas {
-        text-align: left;
-        justify-items: left;
+        text-align: center;
+        justify-items: center;
         display: flex;
         width: 15%;
         margin: auto;
@@ -196,54 +249,52 @@ footer section {
 
     #look {
         display: flex;
-        justify-self: flex-end;
-        position: relative;
+        color: #ebebeb;
+        background-color: white;
+        position: absolute;
+        right: 6.5%;
         align-self: center;
-        color: #666;
-        padding: 1.5px;
+        justify-self: flex-end;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
     #navs {
         display: flex;
         font-size: large;
+        align-items: flex-end;
+        justify-content: space-between;
     }
-    #enCuotas{
+
+    #enCuotas {
         font-size: large;
     }
 
-    .burger-menu {
-        display: none;
+
+
+    footer {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
-    
-footer {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
 
-footer section{
-    width: 30%;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    flex-grow: 1;
-}
+    footer section {
+        width: 30%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        flex-grow: 1;
+    }
 
-.footerIcon {
-    color: #1259c3;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-.footerIcon :hover{
-    color: #03264C;
-}
-section#copy{
-    text-align: left; 
-    width: 100%;
-    margin: auto;
-    padding-left: 10px;
-}
+    .footerIcon {
+        color: #1259c3;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .footerIcon :hover {
+        color: #03264C;
+    }
+
 
 }
